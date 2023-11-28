@@ -6,12 +6,11 @@
              x:Class="MauiRotationList.MainPage">
 
     <ScrollView>
-        <ListView BackgroundColor="Red" ItemsSource="{Binding ItemsList}"
-                  Rotation="180">
+        <ListView BackgroundColor="Red" ItemsSource="{Binding ItemsList}">
             <ListView.ItemTemplate>
                 <DataTemplate>
                     <ViewCell>
-                        <Grid>
+                        <Grid Rotation="180">
                             <Label TextColor="Black" Text="{Binding}" />
                         </Grid>
                     </ViewCell>
